@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(198, 189, 189);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgb(155, 150, 150);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-bar-links a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;    
+}
+
+.home-section {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.home-div-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.home-div-class h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.home-section-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section-class img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px 50px;
+    transition: 0.3s ease;
+}
+
+.home-section-class img:hover {
+    transform: scale(1.1);
+}
+
+.home-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.home-info p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "italic";
+}
+
+.cv-contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.cv-contact-links .resume-link {
+    color: black;
+    background-color: rgb(105, 105, 189);
+    border: 1px solid rgb(92, 91, 91);
+    border-radius: 10px 20px 10px 20px;
+    padding: 1rem;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cv-contact-links .resume-link:hover {
+    background-color: rgb(120, 125, 233);
+}
+
+.cv-contact-links .contact-link  {
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(92, 91, 126);
+    border-radius: 10px 20px 10px 20px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;    
+    transition: 0.3s ease;
+}
+
+.cv-contact-links .contact-link:hover {
+    background-color: rgb(229, 218, 218);
+}
+
+.about-section {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.about-div-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.about-div-class h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-info img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 100%;
+    transition: 0.3s ease;
+}
+
+.about-info img:hover {
+    transform: scale(1.1);
+}
+
+.about-info-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.about-info-paragraphs p {
+    font-size: 1.5rem;
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    text-align: center; 
+    transition: 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.1);
+}
+
+.skill-logo img {
+    width: 100%;
+    max-width: 210px;
+    border-radius: 50px;
+}
+
+.skill-logo p {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.projects-section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;
+}
+
+.personal-finance-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.project-text-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-text-div .real-world-project-paragraph {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(150, 148, 145);
+    padding: 1rem;
+}
+
+.project-text-div .build-with-paragraph {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-text-div .name-project-paragraph {
+    font-size: 2rem;
+}
+
+.video-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.video-image-div img {
+    width: 100%;
+    max-width: 450px;
+    min-height: 220px;
+    border-radius: 10px;
+}
+
+.video-image-div video {
+    width: 100%;
+    max-width: 450px;
+    min-height: 220px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.project-links a {
+    color: black;
+    background-color: rgb(150, 148, 145);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;  
+    transition: 0.3s ease-in;
+}
+
+.project-links a:hover {
+    background-color: rgb(198, 195, 193);;
+}
+
+.country-info-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
+
+.expense-trakcer-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(249, 247, 247, 0.582);
+    border: 2px solid rgba(103, 99, 99, 0.362);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 950px;
+    padding: 1.5rem;
+}
+
+.contact-section {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.contact-info h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: italic;    
+}
+
+.contact-me-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-right: 2px solid rgb(13, 13, 13);
+}
+
+.form-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 650px;
+}
+
+.form-class input {
+    color: black;
+    background-color: rgb(238, 234, 234);
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(96, 95, 95);;
+    border-radius: 10px;
+    
+}
+
+.form-class textarea {
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    background-color: rgb(238, 234, 234);
+    border-radius: 15px;
+    border: 1px solid rgb(96, 95, 95);;
+    padding: 1rem;
+}
+
+.form-class button {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgb(238, 234, 234);;
+    border: 2px solid rgb(96, 95, 95);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: center;  
+    background-color: rgb(238, 234, 234);
+    padding: 0.5rem; 
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+.contact-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-box .icon {
+    width: 100%;
+    max-width: 70px;
+}
+
+.contact-box p {
+    font-size: 1.5rem;
+}
+
+.toast-notification {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.toast-notification.show {
+    opacity: 1;
+}
+
+.contact-box .copy-icon {
+    width: 100%;
+    max-width: 40px;
+}
+
+.footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .home-section-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-me-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.form-container {
+    border: none;
+}
+}
+
+@media (max-width: 600px) {
+    .projects-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+}
+
+@media (max-width: 400px) {
+    .cv-contact-links {
+        flex-direction: column;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
