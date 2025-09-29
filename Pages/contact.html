@@ -31,10 +31,25 @@
 
                     <div class="form-container">
                         <form class="form-class contact-form">
-                            <input type="text" id="name-input" placeholder="Name">
-                            <input type="email" id="email-input" placeholder="Email">
-                            <textarea id="message" placeholder="Write something..."></textarea>
+
+                            <div class="input-div">
+                                <input type="text" id="name-input" placeholder="Name">
+                                <p id="name-error-message" class="error-message"></p>
+                            </div>
+
+                            <div class="input-div">
+                                <input type="email" id="email-input" placeholder="Email">
+                                <p id="email-error-message" class="error-message"></p>
+                            </div>
+
+                            <div class="input-div">
+                                <textarea id="message" placeholder="Write something..."></textarea>
+                                <p id="textarea-error-message" class="error-message"></p>
+                            </div>
+
                             <button type="submit" class="form-button">Submit</button>
+                            <p id="success"></p>
+                            
                         </form>
                     </div>
 

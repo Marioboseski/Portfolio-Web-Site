@@ -107,7 +107,7 @@ body {
 
 .cv-contact-links .resume-link {
     color: black;
-    background-color: rgb(105, 105, 189);
+    background-color: rgb(153, 153, 188);
     border: 1px solid rgb(92, 91, 91);
     border-radius: 10px 20px 10px 20px;
     padding: 1rem;
@@ -122,13 +122,13 @@ body {
 
 .cv-contact-links .contact-link  {
     color: black;
-    background-color: white;
-    border: 1px solid rgb(92, 91, 126);
+    background-color: rgb(250, 249, 249);
+    border: 2px solid #0a0909;
     border-radius: 10px 20px 10px 20px;
     padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;    
-    transition: 0.3s ease;
+    transition: 0.3s ease-out;
 }
 
 .cv-contact-links .contact-link:hover {
@@ -323,7 +323,7 @@ body {
 }
 
 .project-links a:hover {
-    background-color: rgb(198, 195, 193);;
+    background-color: rgb(170, 169, 188);;
 }
 
 .country-info-app {
@@ -382,9 +382,10 @@ body {
 
 .form-container {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     border-right: 2px solid rgb(13, 13, 13);
+    padding-right: 1.1rem;
 }
 
 .form-class {
@@ -398,26 +399,37 @@ body {
     max-width: 650px;
 }
 
-.form-class input {
+.input-div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-div input {
     color: black;
     background-color: rgb(238, 234, 234);
     width: 100%;
-    max-width: 500px;
     padding: 1rem;
     font-size: 1.5rem;
     border: 1px solid rgb(96, 95, 95);;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
-.form-class textarea {
-    width: 100%;
-    max-width: 500px;
-    min-height: 200px;
+.input-div textarea {
+    color: black;
     background-color: rgb(238, 234, 234);
-    border-radius: 15px;
-    border: 1px solid rgb(96, 95, 95);;
+    width: 100%;
     padding: 1rem;
+    font-size: 1.5rem;    
+    border-radius: 15px;
+    border: 1px solid rgb(96, 95, 95);
+    min-height: 200px;  
+}
+
+.input-div p {
+    font-size: 0.5rem;
+    color: red;
 }
 
 .form-class button {
@@ -429,6 +441,12 @@ body {
     border: 2px solid rgb(96, 95, 95);
     border-radius: 10px;
     cursor: pointer;
+}
+
+#success {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(25, 125, 25);
 }
 
 .contact-item {
