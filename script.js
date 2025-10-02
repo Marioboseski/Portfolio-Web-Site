@@ -36,7 +36,7 @@ const nameError = document.getElementById("name-error-message");
 const emailError = document.getElementById("email-error-message");
 const messageError = document.getElementById("textarea-error-message");
 
-form.addEventListener("submit", (e) => {
+ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const name = nameInput.value.trim();
